@@ -11,7 +11,7 @@
 float descuento(float flotanteADescontar, float descuento);
 float aumento(float flotanteAumentar, float aumento);
 float bitcoin(float plata);
-float precioPorUnidad(int divisor, float dividendo);
+float division(int divisor, float dividendo);
 float diferenciaDePrecio(float precioUno, float precioDos);
 
 #endif /* UTN_CALCULOS_H_ */

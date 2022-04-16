@@ -97,9 +97,9 @@ int main(void) {
 
 						totalBitcoinLatam = bitcoin(precioLatam);
 
-						precioPorKilometroAerolineas = precioPorUnidad(kilometros, precioAerolineas);
+						precioPorKilometroAerolineas = division(kilometros, precioAerolineas);
 
-						precioPorKilometroLatam = precioPorUnidad(kilometros, precioLatam);
+						precioPorKilometroLatam = division(kilometros, precioLatam);
 
 						diferenciaDePrecioIngresado = diferenciaDePrecio(precioAerolineas, precioLatam);
 
@@ -152,9 +152,9 @@ int main(void) {
 
 					totalBitcoinLatam = bitcoin(159339);
 
-					precioPorKilometroAerolineas = precioPorUnidad(7090, 162965);
+					precioPorKilometroAerolineas = division(7090, 162965);
 
-					precioPorKilometroLatam = precioPorUnidad(7090, 159339);
+					precioPorKilometroLatam = division(7090, 159339);
 
 					diferenciaDePrecioIngresado = diferenciaDePrecio(162965, 159339);
 

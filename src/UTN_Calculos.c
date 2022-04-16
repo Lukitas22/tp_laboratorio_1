@@ -8,6 +8,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/// @brief esta funcion recibe un flotante y le aplica un descuento a eleccion.
+///
+/// @param flotanteADescontar es la variable que se desea descontar.
+/// @param descuento es el descuento a realizar.
+/// @return retorna el total con descuento incluido.
 float descuento(float flotanteADescontar, float descuento){
 	float totalConDescuento;
 	float descuentoTotal;
@@ -18,7 +23,11 @@ float descuento(float flotanteADescontar, float descuento){
 	return totalConDescuento;
 }
 
-
+/// @brief  esta funcion recibe un flotante y le aplica un aumento.
+///
+/// @param flotanteAumentar es la variable que se desea aumentar.
+/// @param aumento es el aumento a realizar.
+/// @return retorna el total con aumento incluido.
 float aumento(float flotanteAumentar, float aumento){
 	float totalConAumento;
 
@@ -29,6 +38,10 @@ float aumento(float flotanteAumentar, float aumento){
 	return totalConAumento;
 }
 
+/// @brief esta funcion se utiliza para transformar un monto en bitcoin.
+///
+/// @param plata es la variable que se ingresa para transformala en bitcoin.
+/// @return retorna la transformacion en bitcoin.
 float bitcoin(float plata){
 	float totalBitcoin;
 
@@ -37,7 +50,12 @@ float bitcoin(float plata){
 	return totalBitcoin;
 }
 
-float precioPorUnidad(int divisor, float dividendo){
+/// @brief esta funcion realiza una division.
+///
+/// @param divisor es el numero que divide.
+/// @param dividendo es el numero a dividir.
+/// @return retorna el total de la division.
+float division(int divisor, float dividendo){
 	float totalUnitario;
 
 	totalUnitario = dividendo / divisor;
@@ -45,6 +63,11 @@ float precioPorUnidad(int divisor, float dividendo){
 	return totalUnitario;
 }
 
+/// @brief esta funcion calcula la diferencia entre dos flotantes
+///
+/// @param precioUno es una de las variables que el usuario ingresa para realizar la diferencia.
+/// @param precioDos es la otra variable para realizar la diferencia.
+/// @return retorna el total de esa diferencia.
 float diferenciaDePrecio(float precioUno, float precioDos){
 	float totalDiferencia;
 

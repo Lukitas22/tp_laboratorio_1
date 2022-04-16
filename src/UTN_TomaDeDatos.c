@@ -7,6 +7,15 @@
 
 #include <stdio.h>
 
+/// @brief Esta funcion toma un entero dentro de un rango de maximo y minimo y tiene un maximo de reintentos.
+///
+/// @param pEnteroIngresado es un puntero hacia la variable de ingreso de datos del usuario.
+/// @param mensaje es un mensaje para pedir algo al usuario.
+/// @param mensajeError es un mensaje de error en caso de que ingrese mal el dato.
+/// @param maximo es el maximo que tendra el entero.
+/// @param minimo es el minimo que tendra el entero.
+/// @param maximoDeReintentos es el maximo de intentos que tendra el usuario de equivocarse.
+/// @return retorna 0 si la funcion se realizo correctamente y retorna -1 en caso de que no se hayan ingresado bien los datos.
 int getInt(int * pEnteroIngresado, char * mensaje, char * mensajeError, int maximo, int minimo, int maximoDeReintentos){
 
 	int auxEntero;
@@ -34,6 +43,14 @@ int getInt(int * pEnteroIngresado, char * mensaje, char * mensajeError, int maxi
 	return retorno;
 }
 
+/// @brief Esta funcion toma un flotante, con un minimo y tiene un maximo de reintentos.
+///
+/// @param pFlotanteIngresado es un puntero hacia la variable de ingreso de datos del usuario.
+/// @param mensaje es un mensaje para pedir algo al usuario.
+/// @param mensajeError es un mensaje de error en caso de que ingrese mal el dato.
+/// @param minimo es el minimo que tendra el flotante.
+/// @param maximoDeReintentos es el maximo de intentos que tendra el usuario de equivocarse.
+/// @return retorna 0 si la funcion se realizo correctamente y retorna -1 en caso de que no se hayan ingresado bien los datos.
 float getFloat(float * pFlotanteIngresado, char * mensaje, char * mensajeError, int minimo, int maximoDeReintentos){
 
 	float auxFlotante;
